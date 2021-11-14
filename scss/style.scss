@@ -139,4 +139,141 @@
 // === /header ===
 
 
+
+// === hero ===
+
+.hero {
+    padding-top: 235px;
+    padding-bottom: 193px;
+    background-image: url(../images/hero/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    &__box {
+        width: 465px;
+        color: #fff;
+    }
+
+    &__title {
+        font-weight: 800;   
+        font-size: 45px;
+        line-height: 45px;
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        margin-bottom: 31px;
+    }
+
+    &__text {
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        margin-bottom: 31px;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 15px 38px;
+        background-color: $green;
+        border-radius: 30px;
+        color: #fff;
+        font-weight: 700;
+        transition: all .2s;
+
+        &:hover {
+            background-color: #416E1C; 
+        }
+    }
+}
+
+// === /hero ===
+
+
+
+// === about ===
+
+.about {
+    padding-top: 86px;
+    padding-bottom: 92px;
+    position: relative;
+
+    &__img--absolute  {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__img-box {
+        margin-right: 30px;
+    }
+
+    &__text-box {
+        max-width: 718px;
+    }
+
+    &__title {
+        @extend %title-style;
+        font-weight: 800;
+        margin-bottom: 55px;
+        background-color: #fff;
+        padding: 30px 80px;
+        display: inline-block;
+        box-shadow: 25px 0px 35px #F3F3F3;
+        border-radius: 0px 0px 35px 0px;
+    }
+
+    &__text {
+        letter-spacing: 0.1px;
+        margin-bottom: 30px;
+    }
+
+    &__text--last {
+        margin-bottom: 5px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;   
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: (linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+            background: linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+    }
+
+    &__text--green {
+        color: $green;
+        font-weight: 800;
+    }
+
+    &__link {
+        display: flex;
+        color: $green;
+        font-weight: 800;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__link-img {
+        margin-left: 10px;
+    }
+}
+
+// === /about ===
+
+
 @import 'media';
