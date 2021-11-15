@@ -285,9 +285,10 @@
     &__title {
         position: absolute; 
         top: -50px;
-        right: -71px;
+        right: 15px;
         @extend %title-style;
-        padding: 27px 475px 39px 87px;
+        padding: 27px 0 39px 87px;
+        width: 963px;
         // padding: auto;
         background: #FFFFFF;
         box-shadow: 0px -20px 35px #F3F3F3;
@@ -310,7 +311,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         // background-position: right right;
-        margin-right: -7px;
     }
 
     &__item-titlebox {
@@ -361,11 +361,81 @@
         background-size: cover;
         background-repeat: no-repeat;
         // background-position: left left;
-        padding: 93px 20px 125px 71px;
+        padding: 93px 20px 161px 71px;
     }
 }
 
 // === /structure ===
 
 
+
+// === services ===
+
+.services {
+    padding-top: 84px;
+    padding-bottom: 79px;
+    position: relative;
+
+    &__title {
+        @extend %title-style;
+        margin-bottom: 56px;
+        text-align: center;
+    }
+
+    &__img--absolute {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__items {
+        display: grid;      
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 47px;
+    }
+
+    &__item {
+        max-width: 400px;
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 35px #EAEAEA;
+        border-radius: 0px 0px 0px 35px;
+        min-height: 409px;  
+        padding-top: 69px;
+        padding-right: 45px;
+        padding-left: 23px; 
+        padding-bottom: 63px;
+    }
+
+    &__item--unique {
+        border-radius: 0px 35px 0px 0px;
+    }
+
+    &__item-icon {
+        position: absolute;
+        top: -26px;
+        left: 20px;
+    }
+
+    &__item-title {
+        color: $black;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-bottom: 22px;
+    }
+
+    &__item-title--bold {
+        font-weight: 800;
+    }
+
+    &__item-text {
+        color: $grey;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+    }
+}
+
+// === /services ===
 @import 'media';
