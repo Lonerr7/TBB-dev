@@ -23,3 +23,28 @@ body {
     overflow: hidden;
 }
 
+.slick-arrow {
+    position: absolute;
+    z-index: 4;
+    width: 62px;
+    height: 62px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slick-next {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/documentation/arrow-right.svg);
+}
+
+.slick-prev {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(../images/documentation/arrow-left.svg);
+}

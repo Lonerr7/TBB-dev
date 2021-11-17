@@ -361,7 +361,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         // background-position: left left;
-        padding: 93px 20px 161px 71px;
+        padding: 93px 70px 188px 71px;
     }
 }
 
@@ -438,4 +438,147 @@
 }
 
 // === /services ===
+
+
+// === documentation ===
+
+.documentation {
+    position: relative;
+    padding-top: 154px;
+    padding-bottom: 45px;   
+    // background-color: #FFFAF2;
+
+    &__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 30px 203px 30px 521px;
+        background-color: $green;
+        @extend %title-style;
+        box-shadow: 0px 0px 35px #F3F3F3;
+        border-radius: 0px 0px 35px 0px;
+        color: #fff;
+    }
+
+    &__subtext-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 43px;
+    }
+
+    &__subtext {
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        margin-left: 10px;
+    }
+    
+    &__slider {
+        margin: 0 auto 24px auto;
+    }  
+
+    &__slider-img {
+        margin: 0 auto; 
+    }
+
+    &__image--absolute {
+        position: absolute;
+        right: 0;
+        bottom: 33%;
+        z-index: 0;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text-box {
+        max-width: 722px;
+    }
+
+    &__text-title {
+        @extend %title-style;
+        margin-bottom: 75px;
+    }
+
+    &__text {
+        color: $grey;
+        letter-spacing: 0.1px;
+        margin-bottom: 44px;
+    }
+
+    &__btn {
+        display: inline-block;
+        color: #fff;
+        background-color: $green;
+        transition: all .3s;
+        padding: 15px 38px;
+        border-radius: 30px;
+
+        &:hover {
+            background-color: #416E1C; 
+        }
+    }
+
+    &__images {
+        display: flex;
+    }
+
+    &__img-box--second {
+        margin-top: 86px;
+    }
+}
+
+.slider__text {
+    position: absolute;
+    top: 708px;
+    left: 0; 
+    right: 0; 
+    line-height: 40px;
+    padding: 10px 43px 10px 43px;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 387px;
+    background-color: $green;
+    color: #fff;
+    box-shadow: 0px 0px 35px #F3F3F3;
+    border-radius: 0px 35px 0px 0px;
+}
+
+.slider__progressbar-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 417px;
+    margin: 0 auto;
+    margin-bottom: 164px;
+}
+
+.slider__progressbar {
+    display: block;
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    height: 4px;
+    border-radius: 10px;
+    // overflow: hidden;
+    background-color: rgba($color: $green, $alpha: .3);
+    background-image: linear-gradient(to right, black, black);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s ease-in-out;
+}
+
+.slider__progressbar-text {
+    font-weight: 700;   
+    line-height: 25px;  
+    letter-spacing: 0.5px;
+}
+
+// === /documentation ===
+
+
 @import 'media';
