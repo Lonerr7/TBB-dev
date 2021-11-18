@@ -581,4 +581,217 @@
 // === /documentation ===
 
 
+// === products ===
+
+.products {
+    padding-top: 74px;
+
+    &__title {
+        @extend %title-style;
+        margin-bottom: 62px;
+        text-align: center;
+    }
+
+    &__tabs {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    &__tabs-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 7px;
+        margin-bottom: 7px;
+    }
+
+    &__tabs-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: $green;
+        cursor: pointer;
+        color: #fff;
+        height: 108px;
+        padding: 0 25px;
+    }
+
+    &__tabs-button--1 {
+        border-radius: 35px 0px 0px 0px;
+    }
+
+    &__tabs-button--active {
+        background-color: $orange;
+        font-weight: 800;
+    }
+
+    &__tabs-buttonimg {
+        margin-right: 18px;
+    }
+
+    &__tabs-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        max-width: 1300px;
+    }
+
+    &__tabs-item {
+        // width: 33%; 
+        height: 320px;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        color: #fff;
+        position: relative;
+
+        &:hover {
+            .products__tabs-item--hover {
+                opacity: 1;
+            }
+
+            .products__tabs-itemtitle {
+                opacity: 0;
+            }
+        }
+    }
+
+    &__tabs-item--hover {
+        position: absolute;
+        background-color: rgba($color: $orange, $alpha: .9);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .3s;
+        
+    }
+
+    &__tabs-item--hover--title {
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 800;
+        letter-spacing: 0.3px;
+        margin-bottom: 34px;
+    }
+
+    &__tabs-item--hover--text {
+        text-align: left;
+    }
+
+    &__tabs-item--1, &__tabs-item--2 {
+        background-image: url(../images/products/2.png);
+    }
+
+    &__tabs-item--3 {
+        background-image: url(../images/products/3.png);
+    }
+
+    &__tabs-item--4 {
+        background-image: url(../images/products/4.png);
+    }
+
+    &__tabs-item--5 {
+        background-image: url(../images/products/5.png);
+    }
+
+    &__tabs-item--6 {
+        background-image: url(../images/products/6.png);
+    }
+
+    &__tabs-item--7 {
+        background-image: url(../images/products/7.png);
+    }
+
+    &__tabs-item--8 {
+        background-image: url(../images/products/8.png);
+    }
+
+    &__tabs-item--9 {
+        background-image: url(../images/products/9.png);
+    }
+
+    &__tabs-item--10 {
+        background-image: url(../images/products/10.png);
+    }
+
+    &__tabs-item--11 {
+        background-image: url(../images/products/11.png);
+    }
+
+    &__tabs-item--12 {
+        background-image: url(../images/products/12.png);
+    }
+
+    &__tabs-item--13 {
+        background-image: url(../images/products/13.png);
+    }
+
+    &__tabs-item--14 {
+        background-image: url(../images/products/14.png);
+    }
+
+    &__tabs-item--unique {
+        background-color: $green;
+        display: flex;
+        flex-direction: column;
+        position: relative; 
+        border-radius: 0px 0px 35px 0px;
+    }
+
+    &__tabs-item--uniquetitle {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 56px;  
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        margin-bottom: 23px;
+    }
+
+    &__tabs-item--unique-text {
+        max-width: 353px;
+        line-height: 25px;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+    }
+
+    &__tabs-item--unique-btn {
+        background-color: #fff;
+        color: $green;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 18px 40px;
+        border-radius: 30px;
+        display: inline-block;
+        align-self: flex-start;
+        margin-left: 38px;
+    }
+
+    &__tabs-item--unique-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    &__tabs-itemtitle {
+        font-size: 28px;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+        font-weight: 800;
+        transition: all .3s;
+    }
+}
+
+// === /products ===
+
+
 @import 'media';
